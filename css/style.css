@@ -1,0 +1,180 @@
+html {
+	height: 100%;
+	overflow-x: hidden;
+	margin: 0px;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+}
+
+#mainApp {
+	position: relative;
+}
+
+header {
+	float: left;
+	height: auto;
+	width: 100%;
+}
+
+header > #logo,
+header > #navbar {
+	float: left;
+}
+
+banner {
+	float: left;
+	height: 200px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: black;
+}
+
+banner > img {
+	margin: 10px;
+	height: 90%;
+}
+
+sidebar {
+	float: left;
+	text-align: center;
+	background-color: black;
+}
+
+appbody {
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+appbody > div#content > img#image1 {
+	height: 220px;
+	float: left;
+  	margin: 0px 10px 0px 0px;
+}
+
+appbody > div#content > div#three-images {
+	text-align: right;
+}
+
+appbody > div#content > div#three-images > div#image-left,
+appbody > div#content > div#three-images > div#image-center,
+appbody > div#content > div#three-images > div#image-right {
+	float: left;
+	width: 33%;
+}
+
+appbody > div#content > div#three-images > div#image-left {
+	text-align: left;
+}
+
+appbody > div#content > div#three-images > div#image-center {
+	text-align: center;
+}
+
+appbody > div#content > div#three-images > div#image-right {
+	text-align: right;
+}
+
+appbody > div#content > div#three-images img {
+	width: 95%;
+}
+
+footer {
+	float: left;
+	height: 70px;
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	background-color: black;
+}
+
+header > #navbar > ul {
+	list-style-type: none;
+    padding: auto;
+    padding-right: 10px;
+}
+
+header > #navbar > ul > li {
+    display: inline;
+    margin: 5px;
+}
+
+@media screen and (min-width:700px) {
+  	header > #logo {
+		height: 70px;
+		width: 20%;
+	}
+
+	header > #navbar {
+		height: 70px;
+		width: 80%;
+		text-align: right;
+	}
+
+	header > #logo > img {
+		width: 90%;
+		height: 90%;
+		padding: 5px 0px 5px 0px;
+	}
+
+	sidebar {
+	  	width: 25%;
+	  	min-height: 600px;
+	}
+
+	appbody {
+		width: 75%;
+		height: 600px;
+	}
+
+	appbody > div#content {
+		padding-left: 10px;
+	}
+
+	appbody > div#content > div#three-images {
+		position: absolute;
+	    bottom: 0; 
+	    width: 100%; 
+	    height: auto;
+	}
+}
+@media screen and (max-width:699px) {
+	header > #logo {
+		height: 70px;
+		width: 100%;
+		text-align: center;
+	}
+
+	header > #navbar {
+		height: auto;
+		width: 100%;
+		text-align: center;
+	}
+
+	header > #logo > img {
+		width: 200px;
+		height: 60px;
+		padding: 5px 0px 5px 0px;
+	}
+
+	sidebar {
+	  	width: 100%;
+	  	height: 200px;
+	}
+
+	appbody {
+		width: 100%;
+		height: auto;
+		margin-top: 10px;
+	}
+
+	appbody > div#content > div#three-images {
+		clear: left;
+	    width: 100%;
+	}
+}
